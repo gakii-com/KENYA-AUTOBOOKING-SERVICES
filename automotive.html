@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Auto Travel - Premium Vehicle Booking</title>
+    <link rel="stylesheet" href="./automotive.css">
+</head>
+<body>
+    <header>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <div class="container">
+            <div class="logo">
+                <h1>Kenya Auto Travel</h1>
+                <p>Your Journey, Our Priority</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#vehicles">Vehicles</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Premium Vehicle Hire Services Across Kenya</h2>
+                <p>Book your perfect vehicle for city travel, safari adventures, or business trips</p>
+                <div class="search-box">
+                    <div class="search-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Pick-up Location">
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="text" placeholder="Pick-up Date">
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-car"></i>
+                        <select>
+                            <option value="">Vehicle Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="van">Van</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="safari">Safari Vehicle</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search Vehicles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe & Secure</h3>
+                <p>All vehicles regularly inspected and drivers vetted</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Best Prices</h3>
+                <p>Competitive rates with no hidden charges</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our team is always available to assist you</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-car-side"></i>
+                <h3>Wide Selection</h3>
+                <p>Choose from 100+ vehicles across Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+        <div class="container">
+            <h2 class="section-title">Our Vehicle Fleet</h2>
+            <p class="section-subtitle">Choose the perfect vehicle for your needs</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Vehicles</button>
+                <button class="filter-btn" data-filter="sedan">Sedans</button>
+                <button class="filter-btn" data-filter="suv">SUVs</button>
+                <button class="filter-btn" data-filter="van">Vans</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="safari">Safari</button>
+            </div>
+            
+            <div class="vehicle-grid">
+                <!-- Vehicles will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Book your vehicle in just 3 easy steps</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Vehicle</h3>
+                    <p>Select from our wide range of vehicles that suit your needs and budget</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Make Reservation</h3>
+                    <p>Pick your dates, provide details, and make a secure payment</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Enjoy Your Ride</h3>
+                    <p>Your vehicle will be delivered to your preferred location on time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by thousands of travelers across Kenya</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The safari Jeep was perfect for our Maasai Mara trip. Comfortable and reliable even on rough terrain. The driver was knowledgeable about all the best spots!"</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Tourist from UK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"I use Kenya Auto Travel for all my business trips in Nairobi. Their luxury cars are always clean and the drivers are professional and punctual."</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <div>
+                                <h4>Michael Otieno</h4>
+                                <span>Business Executive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"We rented a van for our family reunion in Mombasa. Spacious, comfortable, and the air conditioning was a lifesaver! Will definitely use them again."</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+                            <div>
+                                <h4>Grace Mwende</h4>
+                                <span>Family Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Download our mobile app for exclusive deals and easier booking</p>
+            <div class="app-buttons">
+                <button class="app-store-btn">
+                    <i class="fab fa-apple"></i>
+                    <div>
+                        <span>Download on the</span>
+                        <strong>App Store</strong>
+                    </div>
+                </button>
+                <button class="google-play-btn">
+                    <i class="fab fa-google-play"></i>
+                    <div>
+                        <span>Get it on</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Kenya Auto Travel</h3>
+                    <p>Providing premium vehicle hire services across Kenya since 2010. We're committed to making your travel experience comfortable, safe, and memorable.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#vehicles">Vehicles</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Mombasa Road, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@kenyautotravel.com</p>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Kenya Auto Travel. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./automotive.js"></script>
+</body>
+</html>
